@@ -1,8 +1,12 @@
 #ifndef UA2F_UTIL_H
 #define UA2F_UTIL_H
 
+#include <stdbool.h>
 #include <string.h>
 
-void *memncasemem(const void *l, size_t l_len, const void *s, size_t s_len);
+#define QUEUE_NUM 10010
 
-#endif //UA2F_UTIL_H
+void *memncasemem(const void *l, size_t l_len, const void *s, size_t s_len);
+bool is_http_protocol(const char *p, unsigned int len);
+
+#endif // UA2F_UTIL_H
